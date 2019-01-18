@@ -1,5 +1,7 @@
-{
-  'title':'Ja Rule messes up at fyre fest or something',
-  'inJail': false,
-  'link': 'https://website.com/news-article'
-}
+[
+  {
+    "title": "Ja Rule messes up at fyre fest or something",
+    "inJail": false,
+    "link": "https://website.com/news-article"
+  }
+]

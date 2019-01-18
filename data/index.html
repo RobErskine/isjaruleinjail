@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Is Ja Rule in Jail?</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta name="description" content="Is Ja Rule in jail? find out here">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="manifest" href="site.webmanifest">
+    <style>
+        body{
+            background-size:cover;
+            background-image:url();
+        }
+    </style>
+</head>
+
+<body>
+    
+    <footer>
+        <h1>Ja Rule is <span></span> in jail</h1>
+    </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $.ajax({
+            type: "get",
+            url: "/data/jail.json",
+            success: function (response) {
+                console.log(response);
+                var data = response[0];
+            
+                if(data.inJail == true){
+                    $('footer h1 span').text('definitely');
+                }
+                else{
+                    $('footer h1 span').text('unfortunately not');
+                }
+
+                $('footer').append('<a href="'+response.url+'">'+response.title+'</a>');
+            }
+        });
+    </script>
+
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WGWPWTX');
+    </script>
+
+    <!-- End Google Tag Manager -->
+</body>
+</html>
